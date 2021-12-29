@@ -270,17 +270,33 @@ body, .v-application{
             }
         }
     }
+    @media screen and (max-width: 650px) {
+        &{
+            padding: 20px;
+        }
+    }
 }
 
 #fun_boxes{
     margin-top: -130px;
+    @media screen and (max-width: 960px) {
+        &{
+            padding: 50px;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        &{
+            padding: 20px;
+        }
+    }
 }
 
-.fun_box{
+.v-application .fun_box{
     padding: 36px 18px;
     border: 1px solid #e7e7e7;
     border-radius: 5px;
     background-color: #ffffff;
+    text-align: center;
     i{
         background-color: $theme_color;
         height: 50px;
@@ -291,6 +307,13 @@ body, .v-application{
         border-radius: 50%;
         color: #ffffff;
         font-size: 22px;
+        margin-bottom: 13px;
+    }
+    .title{
+        font-family: prompt, snas-serif !important;
+        font-size: 27px !important;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 }
 
