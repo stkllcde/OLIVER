@@ -10,8 +10,10 @@
         </h1>
         <span class="text-grey sub_title mt-6">It is a long established fact that a reader by the readable content of a page when looking at its layout.</span>
         <div class="mixed_input_form">
-          <input type="text" placeholder="Email">
-          <v-btn depressed color="theme_color" class="rounded-pill" dark>Subscribe</v-btn>
+          <form action="/">
+            <input type="text" placeholder="Email">
+            <v-btn depressed color="theme_color" large class="rounded-pill btn-custom" dark>Subscribe</v-btn>
+          </form>
         </div>
         <v-btn onclick="window.scrollTo(0, 600)" x-large icon color="theme_color" class="mt-10">
           <v-icon
@@ -37,8 +39,23 @@
         </h2>
         <span class="section-sub-title text-grey mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
       </div>
-
+      <div class="container" style="margin-top: 70px;">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h4 class="small_title"><span></span> PERFACT DESIGN</h4>
+            <h2 class="md_title mt-5">
+              It’s Everything You’ll Ever Need.
+            </h2>
+            <p class="text-grey section-sub-title mt-4 line-height">
+              Create custom landing pages with Landik that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.
+            </p>
+            <v-btn class="rounded-pill btn-custom mt-5 pl-9 pr-9" x-large color="theme_color" dark depressed>Explore</v-btn>
+          </div>
+          <div class="col-lg-6"></div>
+        </div>
+      </div>
     </section>
+
   </div>
 </template>
 

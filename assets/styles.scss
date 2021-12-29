@@ -8,6 +8,11 @@
     src: url('./fonts/Prompt-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'prompt-light';
+    src: url('./fonts/Prompt-Light.ttf');
+}
+
 $theme_color: #36b37e;
 $theme_light: #e8f5e9;
 
@@ -32,6 +37,11 @@ body, .v-application{
                 opacity: 0;
             }
             cursor: default;
+        }
+        &.btn-custom{
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
         }
     }
     .v-app-bar-title .v-app-bar-title__content{
@@ -163,8 +173,8 @@ body, .v-application{
     }
     .v-btn{
         position: absolute;
-        right: 9px;
-        top: 6px;
+        right: 2px;
+        top: 2px;
     }
 }
 
@@ -209,4 +219,29 @@ body, .v-application{
     margin: 0 auto;
     top: 24px;
     transform: rotate(160deg);
+}
+
+.small_title{
+    span{
+        background-color: #36b37e;
+        height: 12px;
+        width: 60px;
+        display: inline-block;
+        position: absolute;
+        opacity: 0.13;
+    }
+    letter-spacing: 6px;
+    font-size: 14px;
+    font-family: prompt-light, sans-serif !important;
+}
+
+.md_title{
+    font-size: 34px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.line-height{
+    line-height: 30px;
 }
