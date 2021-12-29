@@ -32,13 +32,7 @@
     <div class="sec_divider mx-auto"></div>
 
     <section class="section" id="features">
-      <div class="section-main-head mx-auto">
-        <h2 class="section-title">
-          <span class="slice"></span>
-          Explore About Our Awesome Features
-        </h2>
-        <span class="section-sub-title text-grey mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
-      </div>
+      
       <div class="image_side_container mx-auto mb-12" style="margin-top: 70px;">
         <div class="side">
           <h4 class="small_title"><span></span> PERFACT DESIGN</h4>
@@ -74,24 +68,25 @@
       </div>
 
       <section class="section" id="what-we-do">
-        <div class="curv_top">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
-            <path fill="#fff" d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"></path>
-          </svg>
-        </div>
-
-        <div class="section-main-head mx-auto text-white">
-          <h2 class="section-title">
-            <span class="slice slice-black"></span>
-            What We Do
-          </h2>
-          <span class="section-sub-title text-white mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
+        <div id="what-we-do-background">
+          <div class="curv_top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+              <path fill="#fff" d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"></path>
+            </svg>
+          </div>
+          <div class="section-main-head mx-auto text-white">
+            <h2 class="section-title">
+              <span class="slice slice-black"></span>
+              What We Do
+            </h2>
+            <span class="section-sub-title text-white mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
+          </div>
         </div>
 
         <div class="container">
           <div class="white_boxes">
             <div v-for="(item, index) in what_we_do_items" :key="index" class="row white_box_row">
-              <div class="col-sm white_box" v-for="(box, box_index) in item" :key="box_index">
+              <div class="col-md white_box" v-for="(box, box_index) in item" :key="box_index">
                   <div class="row">
                     <div class="col-1 mr-7">
                       <img :src="box.icon" width="44px" height="44px">
@@ -101,6 +96,27 @@
                       <p class="sub_title text-grey">{{box.sub_title}}</p>
                     </div>
                   </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="fun_boxes" style="margin-top: -74;">
+        <div class="section-main-head mx-auto">
+          <h2 class="section-title">
+            <span class="slice"></span>
+            Hosts Like You, Worldwide
+          </h2>
+          <span class="section-sub-title text-grey mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
+        </div>
+        <div class="container mt-8">
+          <div class="row">
+            <div class="col-md" v-for="(item, index) in fun_boxes" :key="index">
+              <div class="fun_box">
+                <i :class="item.icon"></i>
+                <h3 class="title">{{item.title}}</h3>
+                <span class="sub_title text-grey">{{item.sub_title}}</span>
               </div>
             </div>
           </div>
@@ -159,6 +175,13 @@ export default {
             sub_title: "If you are going to use a Ipsum, you need to be sure there isn't anything in the middle of text."
           },
         ]
+      ],
+      fun_boxes: [
+        {
+          icon: "mdi mdi-star",
+          title: "4.92/5",
+          sub_title: "Average Ratings"
+        }
       ]
     }
   },

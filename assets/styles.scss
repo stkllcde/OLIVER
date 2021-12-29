@@ -231,10 +231,13 @@ body, .v-application{
 }
 
 #what-we-do{
-    margin-top: 70px;
-    height: 300px;
-    padding: 60px 0;
-    background-color: $theme_color;
+    padding: 0;
+    margin-top: 50px;
+    #what-we-do-background{
+        position: relative;
+        height: 300px;
+        background-color: $theme_color;
+    }
     .curv_top svg {
         position: absolute;
         width: 100%;
@@ -247,15 +250,46 @@ body, .v-application{
 .white_boxes{
     .white_box_row{
         position: relative;
-        top: 30px;
+        top: -120px;
         grid-gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .white_box{
         background-color: #ffffff;
         border-radius: 5px;
         padding: 40px 30px;
         border: 1px solid #eeeeee;
+    }
+    @media screen and (max-width: 960px) {
+        &{
+            padding: 50px;
+            padding-bottom: 0;
+            .white_box_row{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+#fun_boxes{
+    margin-top: -130px;
+}
+
+.fun_box{
+    padding: 36px 18px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: #ffffff;
+    i{
+        background-color: $theme_color;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 22px;
     }
 }
 
