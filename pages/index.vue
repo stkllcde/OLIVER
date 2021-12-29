@@ -123,6 +123,20 @@
         </div>
       </section>
 
+      <div class="container">
+        <section id="big_box" class="section">
+          <div class="section-main-head mx-auto">
+            <h2 class="section-title text-white">
+              We’re Ready for a Challenging Project
+            </h2>
+            <span class="section-sub-title text-white mt-4">The point of using Lorem Ipsum is that opposed to using 'Content here, content here', making it look like readable English.</span>
+            <a href="/">
+              <v-btn class="rounded-lg mt-8" x-large color="white" depressed>Start Free Trial</v-btn>
+            </a>
+          </div>
+        </section>
+      </div>
+
     </section>
   </div>
 </template>

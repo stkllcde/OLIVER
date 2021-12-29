@@ -19,6 +19,7 @@ $theme_light: #e8f5e9;
 .bg-theme{
     background-color: $theme_color;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +31,9 @@ html{
 }
 
 body, .v-application{
+    a{
+        text-decoration: none;
+    }
     user-select: none;
     font-family: prompt, sans-serif !important;
     .v-btn{
@@ -56,8 +60,6 @@ body, .v-application{
     .text-white{
         color: #fff !important;
     }
-    // NOTE
-    height: 2000px;
 }
 
 #app{
@@ -368,4 +370,19 @@ body, .v-application{
             grid-template-columns: 100%;
         }
     }
+}
+
+#big_box{
+    background-color: $theme_color;
+    border-radius: 12px;
+    padding: 80px;
+    @media screen and (max-width: 700px) {
+        .section-title{
+            font-size: 5vw;
+        }
+    }
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }
