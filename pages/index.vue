@@ -137,6 +137,24 @@
         </section>
       </div>
 
+
+      <section class="section">
+        <div class="section-main-head mx-auto">
+            <h2 class="section-title">
+              <span class="slice"></span>
+              How Easy Is It To Get Started?
+            </h2>
+            <span class="section-sub-title text-grey mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
+        </div>
+        <div class="get_start_steps_list mx-auto mt-10">
+          <div class="item" v-for="(item, index) in get_start_steps_list" :key="index">
+            <v-btn :ripple="false" class="btn-mute rounded-lg mb-5" large color="theme_color" dark depressed>{{'Step ' + item.id }}</v-btn>
+            <h3 class="title mb-3">{{item.title}}</h3>
+            <span class="sub_title text-grey">{{item.sub_title}}</span>
+          </div>
+        </div>
+      </section>
+
     </section>
   </div>
 </template>
@@ -210,6 +228,23 @@ export default {
           icon: "mdi mdi-apple-keyboard-command",
           title: "4.9M",
           sub_title: "Total Downloads"
+        },
+      ],
+      get_start_steps_list: [
+        {
+          id: 1,
+          title: "Design & Devloping",
+          sub_title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          id: 2,
+          title: "Testing Project",
+          sub_title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          id: 3,
+          title: "Publisher Project",
+          sub_title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         },
       ]
     }
