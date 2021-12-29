@@ -39,19 +39,37 @@
         </h2>
         <span class="section-sub-title text-grey mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eum modi, adipisci facilis.</span>
       </div>
-      <div class="container" style="margin-top: 70px;">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h4 class="small_title"><span></span> PERFACT DESIGN</h4>
-            <h2 class="md_title mt-5">
-              It’s Everything You’ll Ever Need.
-            </h2>
-            <p class="text-grey section-sub-title mt-4 line-height">
-              Create custom landing pages with Landik that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.
-            </p>
-            <v-btn class="rounded-pill btn-custom mt-5 pl-9 pr-9" x-large color="theme_color" dark depressed>Explore</v-btn>
-          </div>
-          <div class="col-lg-6"></div>
+      <div class="image_side_container mx-auto" style="margin-top: 70px;">
+        <div class="side">
+          <h4 class="small_title"><span></span> PERFACT DESIGN</h4>
+          <h2 class="md_title mt-5">
+            It’s Everything You’ll Ever Need.
+          </h2>
+          <p class="text-grey section-sub-title mt-4 line-height">
+            Create custom landing pages with Landik that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.
+          </p>
+          <v-btn class="rounded-pill btn-custom mt-5 pl-9 pr-9" x-large color="theme_color" dark depressed>Explore</v-btn>
+        </div>
+        <div class="side">
+          <img src="~/assets/images/features-one.png" class="img-fluid mx-auto d-block">
+        </div>
+      </div>
+
+      <div class="sec_divider mx-auto"></div>
+
+      <div class="image_side_container mx-auto" style="margin-top: 70px;">
+        <div class="side">
+          <img src="~/assets/images/features-one.png" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="side">
+          <h4 class="small_title"><span></span>USER INTERFACE</h4>
+          <h2 class="md_title mt-5">
+            Unlimited Features Awaiting For You.
+          </h2>
+          <p class="text-grey section-sub-title mt-4 line-height">
+            Create custom landing pages with Landik that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.
+          </p>
+          <v-btn class="rounded-pill btn-custom mt-5 pl-9 pr-9" x-large color="theme_color" dark depressed>Explore</v-btn>
         </div>
       </div>
     </section>
