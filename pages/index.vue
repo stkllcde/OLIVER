@@ -181,7 +181,22 @@ export default {
           icon: "mdi mdi-star",
           title: "4.92/5",
           sub_title: "Average Ratings"
-        }
+        },
+        {
+          icon: "mdi mdi-account",
+          title: "260k+",
+          sub_title: "Monthly Installs"
+        },
+        {
+          icon: "mdi mdi-download",
+          title: "40k+",
+          sub_title: "Weekly Downloads"
+        },
+        {
+          icon: "mdi mdi-apple-keyboard-command",
+          title: "4.9M",
+          sub_title: "Total Downloads"
+        },
       ]
     }
   },
